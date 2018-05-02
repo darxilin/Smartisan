@@ -1,0 +1,31 @@
+.Bottom {
+  width: 100%;
+  height: 2.5rem;
+  position: fixed;
+  bottom: 0; }
+  .Bottom > nav {
+    height: 100%;
+    display: flex;
+    z-index: 777;
+    background: #fff; }
+    .Bottom > nav > a {
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: #d2d2d2; }
+      .Bottom > nav > a.active {
+        background: #f1f1f1; }
+        .Bottom > nav > a.active > span.iconfont, .Bottom > nav > a.active > span.tab_label {
+          color: #666 !important; }
+      .Bottom > nav > a > span {
+        width: 100%;
+        text-align: center; }
+        .Bottom > nav > a > span.iconfont {
+          font-size: 1.35rem;
+          font-weight: 800; }
+        .Bottom > nav > a > span.tab_label {
+          transform: scale(0.8);
+          font-size: 0.6rem;
+          color: #999;
+          font-weight: 800; }

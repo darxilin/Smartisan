@@ -30,7 +30,7 @@ const router = (
 						</Switch>
 					</User>
 				}/>
-				<Route path="/item" component={Detail}/>
+				<Route path="/item/:id" component={Detail}/>
 				<Route path="/index" component={Index}/>
                 <Redirect path="*" to="/index"/>
 			</Switch>
