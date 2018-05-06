@@ -1,0 +1,177 @@
+
+@mixin one_colum{
+    .item{
+        display: block;
+        height: 3.1rem;
+        line-height: 3.1rem;
+        border-top: 1px solid #E1E1E1;
+        >span:nth-of-type(1){
+            >img {
+                width: 1.85rem;
+                height: 1.85rem;
+                margin: 0 0.625rem;
+            }
+        }
+        >span:nth-of-type(2){
+            font-size: 0.6rem;
+            font-weight: 700;
+            color: #333;
+        }
+        >span:nth-of-type(3){
+            float: right;
+            margin-right: 0.5rem;
+            font-size: 0.6rem;
+            color: #666;
+        }
+    }
+}
+@mixin two_colum{
+    .item{
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        border-top: 1px solid #E1E1E1;
+        border-right: 1px solid #E1E1E1;
+        display: block;
+        height: 3.1rem;
+        line-height: 3.1rem;
+        border-top: 1px solid #E1E1E1;
+        &:nth-of-type(2n){
+            border-right: none;
+        }
+        >span:nth-of-type(1){
+            >img{
+            float: left;
+            width: 1.85rem;
+            height: 1.85rem;
+            margin:0.625rem;
+        }
+        }
+        
+        >span:nth-of-type(2){
+            font-size: 0.6rem;
+            font-weight: 700;
+            color: #333;
+            float: left;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 5rem;
+        }
+        >span:nth-of-type(3){
+            float: right;
+            margin-right: 0.5rem;
+            font-size: 0.6rem;
+            color: #666;
+        }
+    }
+}
+@mixin three_colum{
+    padding-bottom: 1rem;
+    .img{
+        border-bottom: 1px solid #E1E1E1;
+    }
+    .item{
+        width: 5.58rem;
+        float: left;
+        display: block;
+        margin-left: 0.5rem;
+        margin-top: 1rem;
+        >span:nth-of-type(1){
+            display: block;
+            border-radius: 0.25rem;
+            border: 1px solid #E1E1E1;
+            width: 5.5rem;
+            height: 5.5rem;
+            text-align: center;
+            line-height: 5.5rem;
+            >img{
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+        }
+        
+        >span:nth-of-type(2){
+            margin-top: 0.2rem;
+            font-size: 0.6rem;
+            line-height: 1rem;
+            color: #333;
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display: block;
+            width: 100%;
+        }
+        >span:nth-of-type(3){
+            display: none;
+        }
+    }
+}
+
+.Category{
+    p{
+        margin: 0;
+    }
+    >.container{
+        margin-bottom: 2.5rem;
+        >.content_box{
+            overflow: hidden;
+            margin-bottom: 0.4rem;
+            width: 100%;
+            background: #FFFFFF;
+            >.title{
+                height: 2.1rem;
+                line-height: 2.1rem;
+                font-size: 0.8rem;
+                font-weight: 700;
+                text-indent: 1rem;
+                border-bottom: 1px solid #E1E1E1;
+            }
+            >.img{
+                width: 100%;
+                height: 6.05rem;
+                padding: 4%;
+                >a{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    >img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            &:nth-of-type(1){
+                @include one_colum;
+            }
+            &:nth-of-type(2){
+                @include two_colum;
+            }
+            &:nth-of-type(3){
+                @include two_colum;
+            }
+            &:nth-of-type(4){
+                @include three_colum;
+            }
+            &:nth-of-type(5){
+                @include three_colum;
+            }
+            &:nth-of-type(6){
+                @include three_colum;
+            }
+            &:nth-of-type(7){
+                @include two_colum;
+            }
+            &:nth-of-type(8){
+                @include two_colum;
+            }
+            &:nth-of-type(9){
+                @include three_colum;
+            }
+            &:nth-of-type(10){
+                @include two_colum;
+            }
+        }
+    }
+}

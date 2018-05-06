@@ -4,7 +4,7 @@ import Nav from "../Nav"
 import {NavLink} from "react-router-dom"
 import {connect} from "react-redux"
 import axios from "axios"
-import { Modal,Button,message } from 'antd';
+import { Modal,Button,message,Icon } from 'antd';
 import 'antd/dist/antd.css'
 
 class Detail extends Component{
@@ -35,7 +35,7 @@ class Detail extends Component{
 			{
 				this.state.shop_info?
 				<Nav>
-				<span className="go_back" onClick={this.go_back.bind(this)}>返回</span>
+				<span className="go_back" onClick={this.go_back.bind(this)}><Icon type="left"/></span>
 				<span className="title">{this.state.shop_info.name}</span>
 				</Nav>:null
 			}

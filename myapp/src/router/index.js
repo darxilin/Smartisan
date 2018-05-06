@@ -7,6 +7,7 @@ import Detail from "../components/Common/Detail"
 import Index from "../components/Index"
 import User from "../components/User"
 import Login from "../components/User/Login"
+import Order from "../components/User/Order"
 import Regist from "../components/User/Regist"
 import My from "../components/User/My"
 import App from "../App"
@@ -28,6 +29,7 @@ const router = (
 							<Route path="/user/login" component={Login}/>
 							<Route path="/user/regist" component={Regist}/>
 							<Route path="/user/my" component={My}/>
+							<Route path="/user/order" component={Order}/>
 							<Redirect from="/user" to="/user/my"/>
 						</Switch>
 					</User>
