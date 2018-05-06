@@ -1,6 +1,7 @@
 import React,{Component} from "react"
 import "./index.css"
 import Nav from "../Common/Nav"
+import {connect} from "react-redux"
 
 class Category extends Component{
 	render(){
@@ -15,5 +16,13 @@ class Category extends Component{
 			</div>
 		)
 	}
+	componentWillMount(){
+		this.props.bottom_active()
+		this.props.hideNav()
+	}
 }
-export default Category
+export default connect(null,{bottom_active:()=>{
+	return {type:"bottom_active",payload:1}
+},hideNav:()=>{
+	return {type:"hideNav",payload:true}
+}})(Category)

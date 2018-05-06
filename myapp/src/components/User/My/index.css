@@ -1,0 +1,81 @@
+.My p {
+  margin: 0; }
+
+.My > .Nav > span {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center; }
+
+.My > .my_box {
+  width: 94%;
+  margin: 0 auto 3.5rem; }
+  .My > .my_box > .one {
+    margin-top: 3.5rem;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 18px 20px -10px rgba(0, 0, 0, 0.03), 0 18px 20px -10px rgba(0, 0, 0, 0.03), 0 10px 20px -10px rgba(0, 0, 0, 0.03);
+    border-radius: 0.5rem; }
+    .My > .my_box > .one > .up {
+      font-size: 0.9rem;
+      line-height: 4.3rem;
+      border-bottom: 1px solid #E1E1E1; }
+      .My > .my_box > .one > .up > p {
+        width: 4.3rem;
+        height: 4.3rem;
+        float: left;
+        text-align: center;
+        line-height: 4.3rem; }
+        .My > .my_box > .one > .up > p > img {
+          border-radius: 50%;
+          width: 2.75rem;
+          height: 2.75rem; }
+      .My > .my_box > .one > .up > span {
+        float: right;
+        margin-right: 0.5rem;
+        font-size: 0.7rem;
+        color: #999; }
+    .My > .my_box > .one > .down {
+      display: flex; }
+      .My > .my_box > .one > .down > a {
+        box-sizing: border-box;
+        border-right: 1px solid #E1E1E1;
+        width: 25%;
+        height: 3.1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #333; }
+        .My > .my_box > .one > .down > a > span:first-of-type {
+          color: #999;
+          font-size: 0.9rem; }
+        .My > .my_box > .one > .down > a > span:last-of-type {
+          color: #999;
+          font-size: 0.6rem; }
+      .My > .my_box > .one > .down > a:last-of-type {
+        border: none; }
+  .My > .my_box > .two, .My > .my_box > .three, .My > .my_box > .four {
+    margin-top: 1rem;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 18px 20px -10px rgba(0, 0, 0, 0.03), 0 18px 20px -10px rgba(0, 0, 0, 0.03), 0 10px 20px -10px rgba(0, 0, 0, 0.03);
+    border-radius: 0.5rem; }
+    .My > .my_box > .two > a, .My > .my_box > .three > a, .My > .my_box > .four > a {
+      color: #333;
+      display: block;
+      border-bottom: 1px solid #E1E1E1;
+      height: 3.1rem;
+      width: 100%;
+      font-size: 0.9rem;
+      line-height: 3.1rem;
+      text-indent: 1rem; }
+      .My > .my_box > .two > a > span, .My > .my_box > .three > a > span, .My > .my_box > .four > a > span {
+        float: right;
+        margin-right: 0.5rem;
+        font-size: 0.7rem;
+        color: #999; }
+    .My > .my_box > .two > a:last-of-type, .My > .my_box > .three > a:last-of-type, .My > .my_box > .four > a:last-of-type {
+      border: none; }

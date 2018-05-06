@@ -1,0 +1,107 @@
+.My{
+    p{
+        margin: 0;
+    }
+    >.Nav{
+        >span{
+            position: absolute;
+            display: block;
+            left: 0;
+            top: 0;
+            width: 2.5rem;
+            height: 2.5rem;
+            text-align: center;
+        }
+    }
+    >.my_box{
+        width: 94%;
+        margin: 0 auto 3.5rem;
+        >.one{
+            margin-top: 3.5rem;
+            background: #fff;
+            box-shadow: 0 1px 2px rgba(0,0,0,.1), 0 18px 20px -10px rgba(0,0,0,.03), 0 18px 20px -10px rgba(0,0,0,.03), 0 10px 20px -10px rgba(0,0,0,.03);
+            border-radius: 0.5rem;
+            >.up{
+                font-size: 0.9rem;
+                line-height: 4.3rem;
+                border-bottom: 1px solid #E1E1E1;
+                >p{
+                    width: 4.3rem;
+                    height: 4.3rem;
+                    float: left;
+                    text-align: center;
+                    line-height: 4.3rem;
+                    >img{
+                        border-radius: 50%;
+                        width: 2.75rem;
+                        height: 2.75rem;
+                    }
+                }
+                >span{
+                    float: right;
+                    margin-right: 0.5rem;
+                    font-size: 0.7rem;
+                    color: #999;
+                    
+                }
+            }
+            >.down{
+                display: flex;
+                >a{
+                    box-sizing: border-box;
+                    border-right: 1px solid #E1E1E1;
+                    width: 25%;
+                    height: 3.1rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    color: #333;
+                    >span:first-of-type{
+                        color: #999;
+                        font-size: 0.9rem;
+                    }
+                    >span:last-of-type{
+                        color: #999;
+                        font-size: 0.6rem;
+                    }
+                }
+                >a:last-of-type{
+                    border: none;
+                }
+            }
+        }
+        >.two{
+            margin-top: 1rem;
+            width: 100%;
+            background: #fff;
+            box-shadow: 0 1px 2px rgba(0,0,0,.1), 0 18px 20px -10px rgba(0,0,0,.03), 0 18px 20px -10px rgba(0,0,0,.03), 0 10px 20px -10px rgba(0,0,0,.03);
+            border-radius: 0.5rem;
+            >a{
+                color: #333;
+                display: block;
+                border-bottom: 1px solid #E1E1E1;
+                height: 3.1rem;
+                width: 100%;
+                font-size: 0.9rem;
+                line-height: 3.1rem;
+                text-indent: 1rem;
+                >span{
+                    float: right;
+                    margin-right: 0.5rem;
+                    font-size: 0.7rem;
+                    color: #999;
+                }
+            }
+            >a:last-of-type{
+                border: none;
+            }
+        }
+        >.three{
+            @extend .two
+        }
+        >.four{
+            @extend .two
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.Regist{
+    p{
+        margin: 0;
+    }
+    >.Nav{
+        >span{
+            position: absolute;
+            display: block;
+            left: 0;
+            top: 0;
+            width: 2.5rem;
+            height: 2.5rem;
+            text-align: center;
+        }
+    }
+    >.regist_box{
+        width: 90%;
+        margin: 0 auto;
+        >input{
+            width: 100%;
+            height: 2.2rem;
+            outline: none;
+            border: 1px solid #E1E1E1;
+            font-family: "微软雅黑";
+            font-size: 0.8rem;
+            margin-top: 1rem;
+            text-indent: 0.5rem;
+            border-radius: 0.25rem;
+            box-shadow: 0 3px 5px -4px rgba(0,0,0,.4) inset, -1px 0 3px -2px rgba(0,0,0,.1) inset;
+            &.regist{
+                background: #81A8E4;
+                
+            }
+            &:last-of-type{
+                color: #fff;
+            }
+            
+        }
+        >p{
+            margin-top: 1rem;
+            padding-left: 1rem;
+            >span{
+                margin-right: 0.5rem;
+                border-radius: 50%;
+                background: #fff;
+                color: #999;
+                &.agree{
+                    color: #5178df;
+                }
+            }
+            >b{
+                font-weight: normal;
+                color: #5079d9;
+            }
+        }
+    }
+}

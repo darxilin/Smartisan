@@ -1,0 +1,44 @@
+@charset "UTF-8";
+.Regist p {
+  margin: 0; }
+
+.Regist > .Nav > span {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center; }
+
+.Regist > .regist_box {
+  width: 90%;
+  margin: 0 auto; }
+  .Regist > .regist_box > input {
+    width: 100%;
+    height: 2.2rem;
+    outline: none;
+    border: 1px solid #E1E1E1;
+    font-family: "微软雅黑";
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    text-indent: 0.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 3px 5px -4px rgba(0, 0, 0, 0.4) inset, -1px 0 3px -2px rgba(0, 0, 0, 0.1) inset; }
+    .Regist > .regist_box > input.regist {
+      background: #81A8E4; }
+    .Regist > .regist_box > input:last-of-type {
+      color: #fff; }
+  .Regist > .regist_box > p {
+    margin-top: 1rem;
+    padding-left: 1rem; }
+    .Regist > .regist_box > p > span {
+      margin-right: 0.5rem;
+      border-radius: 50%;
+      background: #fff;
+      color: #999; }
+      .Regist > .regist_box > p > span.agree {
+        color: #5178df; }
+    .Regist > .regist_box > p > b {
+      font-weight: normal;
+      color: #5079d9; }

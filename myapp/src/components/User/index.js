@@ -1,22 +1,31 @@
 import React,{Component} from "react"
 import "./index.css"
-import Nav from "../Common/Nav"
+import {connect} from "react-redux"
 
 class User extends Component{
+	constructor(props){
+		super(props);
+	}
 	render(){
 		return (
 			<div className="User">
-			<Nav>
-				个人中心
-			</Nav>
 			<div className="container">
-				用户信息界面
-			</div>
+			
 			{
 				this.props.children
 			}
 			</div>
+			</div>
 		)
 	}
+	componentWillMount(){
+		this.props.bottom_active()
+		this.props.hideNav()
+		
+	}
 }
-export default User
+export default connect(null,{bottom_active:()=>{
+	return {type:"bottom_active",payload:3}
+},hideNav:()=>{
+	return {type:"hideNav",payload:true}
+}})(User)

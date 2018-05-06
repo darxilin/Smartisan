@@ -14,15 +14,16 @@
       flex-direction: column;
       justify-content: flex-end;
       color: #d2d2d2; }
-      .Bottom > nav > a.active {
+      .Bottom > nav > a.bottom_active {
         background: #f1f1f1; }
-        .Bottom > nav > a.active > span.iconfont, .Bottom > nav > a.active > span.tab_label {
+        .Bottom > nav > a.bottom_active > span.iconfont, .Bottom > nav > a.bottom_active > span.tab_label {
           color: #666 !important; }
       .Bottom > nav > a > span {
         width: 100%;
         text-align: center; }
         .Bottom > nav > a > span.iconfont {
-          font-size: 1.35rem;
+          margin-top: 0.25rem;
+          font-size: 1.1rem;
           font-weight: 800; }
         .Bottom > nav > a > span.tab_label {
           transform: scale(0.8);

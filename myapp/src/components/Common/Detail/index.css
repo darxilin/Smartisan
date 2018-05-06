@@ -1,0 +1,295 @@
+@charset "UTF-8";
+.Detail {
+  font-family: Helvetica Neue,Helvetica,Arial,SCREEN GP Sans SC,sans-serif; }
+  .Detail p {
+    margin: 0; }
+  .Detail > .Nav > .go_back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 2.5rem;
+    height: 100%;
+    font-size: 0.7rem;
+    font-weight: normal; }
+  .Detail > .detail_nav {
+    box-shadow: 0 5px 13px rgba(0, 0, 0, 0.12);
+    background: #f2f2f2;
+    width: 100%;
+    height: 2.5rem;
+    position: fixed;
+    top: 2.5rem;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 4%; }
+    .Detail > .detail_nav > a {
+      box-sizing: border-box;
+      font-weight: 700;
+      color: #606060;
+      width: 25%;
+      text-align: center;
+      border: 1px solid #E1E1E1;
+      height: 1.75rem;
+      line-height: 1.75rem; }
+      .Detail > .detail_nav > a.active {
+        background: #bfbfbf;
+        color: #fff; }
+  .Detail > .container {
+    margin: 5rem 0 2.5rem; }
+    .Detail > .container > .ali_images {
+      background: #FFFFFF;
+      width: 100%;
+      height: 15rem;
+      text-align: center; }
+      .Detail > .container > .ali_images > img {
+        width: 15rem;
+        height: 15rem; }
+    .Detail > .container > .shop_info {
+      background: #fff;
+      margin: 0.4rem 0;
+      padding-bottom: 1rem; }
+      .Detail > .container > .shop_info > .detail_info_title {
+        font-size: 0.9rem;
+        font-weight: 700;
+        line-height: 2rem;
+        color: #666;
+        text-indent: 0.5rem;
+        border-bottom: 1px solid #E1E1E1; }
+      .Detail > .container > .shop_info > p:nth-of-type(2) {
+        font-weight: 700;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        line-height: 0.9rem;
+        color: #333;
+        text-indent: 0.75rem; }
+      .Detail > .container > .shop_info > p:nth-of-type(3) {
+        font-size: 0.6rem;
+        line-height: 2rem;
+        color: #7f7f7f;
+        text-indent: 0.75rem; }
+      .Detail > .container > .shop_info > p:nth-of-type(4) {
+        font-family: "微软雅黑";
+        font-weight: 700;
+        font-size: 0.9rem;
+        line-height: 0.9rem;
+        color: #d44d44;
+        text-indent: 0.75rem; }
+    .Detail > .container > .selected {
+      background: #fff;
+      text-indent: 0.75rem;
+      padding: 0.25rem 0; }
+      .Detail > .container > .selected > p {
+        font-size: 0.7rem;
+        line-height: 1.5rem;
+        color: #333; }
+        .Detail > .container > .selected > p > b {
+          font-size: 0.8rem; }
+        .Detail > .container > .selected > p > i {
+          float: right;
+          margin-right: 1rem;
+          font-weight: 700;
+          color: #999; }
+      .Detail > .container > .selected > p:nth-of-type(1) {
+        color: #999;
+        font-size: 0.6rem;
+        font-weight: 700; }
+    .Detail > .container > .reletive {
+      background: #fff;
+      margin: 0.4rem 0; }
+      .Detail > .container > .reletive > .reletive_title {
+        font-size: 0.8rem;
+        line-height: 2rem;
+        text-align: left;
+        text-indent: 0.5rem;
+        font-weight: 700;
+        border-bottom: 1px solid #e1e1e1; }
+      .Detail > .container > .reletive > .contentbox {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: wrap;
+        padding-bottom: 0.5rem; }
+        .Detail > .container > .reletive > .contentbox > a {
+          width: 45%;
+          margin-top: 0.75rem; }
+          .Detail > .container > .reletive > .contentbox > a > img {
+            width: 100%;
+            border: 1px solid #e1e1e1; }
+          .Detail > .container > .reletive > .contentbox > a > p {
+            width: 100%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            text-indent: 0.5rem; }
+            .Detail > .container > .reletive > .contentbox > a > p:nth-of-type(1) {
+              font-weight: 700;
+              line-height: 0.7rem;
+              font-size: 0.8rem;
+              color: #333;
+              transform: scale(0.8);
+              transform-origin: 0 50%; }
+            .Detail > .container > .reletive > .contentbox > a > p:nth-of-type(2) {
+              line-height: 1.2rem;
+              font-size: 0.6rem;
+              transform: scale(0.8);
+              transform-origin: 0 50%;
+              color: #666; }
+            .Detail > .container > .reletive > .contentbox > a > p:nth-of-type(3) {
+              line-height: 0.8rem;
+              font-size: 0.8rem;
+              color: #d44d44;
+              transform: scale(0.8);
+              transform-origin: 0 50%; }
+  .Detail > .bottom {
+    position: fixed;
+    z-index: 2000;
+    box-shadow: 0 -11px 27px rgba(0, 0, 0, 0.08);
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2.5rem;
+    display: flex; }
+    .Detail > .bottom > span {
+      text-align: center;
+      line-height: 2.5rem;
+      font-size: 1.5rem;
+      color: #999;
+      display: block;
+      width: 2.5rem;
+      height: 100%; }
+    .Detail > .bottom > .right {
+      flex: 1;
+      padding: 0.25rem;
+      display: flex; }
+      .Detail > .bottom > .right > a {
+        display: block;
+        text-align: center;
+        line-height: 2rem;
+        font-size: 0.8rem;
+        font-weight: 700;
+        border-radius: 0.25rem;
+        width: 7.75rem;
+        height: 2rem; }
+        .Detail > .bottom > .right > a:first-of-type {
+          color: #999;
+          box-sizing: border-box;
+          border: 1px solid #E1E1E1;
+          margin-right: 0.25rem; }
+        .Detail > .bottom > .right > a:last-of-type {
+          color: #fff;
+          background: #3f6aec; }
+  .Detail > .select_box {
+    width: 100%;
+    height: 22.5rem;
+    overflow: scroll;
+    position: fixed;
+    bottom: 2.5rem;
+    left: 0;
+    background: #fff; }
+
+.modal .ant-modal-body {
+  padding: 0;
+  height: 20rem;
+  overflow: scroll; }
+
+.modal .ant-modal-content {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 2.5rem; }
+
+.pop_select {
+  font-family: Helvetica Neue,Helvetica,Arial,SCREEN GP Sans SC,sans-serif;
+  padding: 5.6rem 0 0; }
+  .pop_select p {
+    margin: 0; }
+  .pop_select > .select_info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(#fefefe, #f6f6f6);
+    box-shadow: 0 5px 13px rgba(0, 0, 0, 0.12);
+    height: 5.6rem; }
+    .pop_select > .select_info > .img_box {
+      background: #fff;
+      position: absolute;
+      top: -0.75rem;
+      left: 0.75rem;
+      width: 5.5rem;
+      height: 5.5rem;
+      border-radius: 0.25rem; }
+      .pop_select > .select_info > .img_box > img {
+        width: 100%;
+        height: 100%; }
+    .pop_select > .select_info > p {
+      margin: 0;
+      margin-left: 7rem; }
+    .pop_select > .select_info > p:nth-of-type(1) {
+      width: 11.75rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding-top: 0.5rem;
+      line-height: 2rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #333; }
+    .pop_select > .select_info > p:nth-of-type(2) {
+      font-size: 0.6rem;
+      color: #666; }
+    .pop_select > .select_info > p:nth-of-type(3) {
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #D44D44; }
+  .pop_select > .select_color > p, .pop_select > .select_storage > p, .pop_select > .select_net > p, .pop_select > .select_num > p {
+    color: #666;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 2.1rem;
+    text-indent: 0.5rem;
+    border-bottom: 1px solid #E1E1E1; }
+  .pop_select > .select_color > .color_box, .pop_select > .select_storage > .color_box, .pop_select > .select_net > .color_box, .pop_select > .select_num > .color_box {
+    overflow: hidden;
+    padding: 0.25rem 0 1rem;
+    border-bottom: 1px solid #E1E1E1; }
+    .pop_select > .select_color > .color_box > a, .pop_select > .select_storage > .color_box > a, .pop_select > .select_net > .color_box > a, .pop_select > .select_num > .color_box > a {
+      float: left;
+      display: block;
+      border: 1px solid #E1E1E1;
+      width: 5.5rem;
+      height: 3.25rem;
+      margin-left: 0.5rem;
+      border-radius: 0.25rem;
+      margin-top: 0.75rem;
+      text-align: center; }
+      .pop_select > .select_color > .color_box > a > img, .pop_select > .select_storage > .color_box > a > img, .pop_select > .select_net > .color_box > a > img, .pop_select > .select_num > .color_box > a > img {
+        width: 1.05rem;
+        height: 1.05rem;
+        border-radius: 50%;
+        margin: 0.5rem; }
+      .pop_select > .select_color > .color_box > a > span, .pop_select > .select_storage > .color_box > a > span, .pop_select > .select_net > .color_box > a > span, .pop_select > .select_num > .color_box > a > span {
+        display: block;
+        text-align: center;
+        font-size: 0.6rem;
+        color: #666; }
+    .pop_select > .select_color > .color_box > a.active, .pop_select > .select_storage > .color_box > a.active, .pop_select > .select_net > .color_box > a.active, .pop_select > .select_num > .color_box > a.active {
+      border: 1px solid #698fe7; }
+      .pop_select > .select_color > .color_box > a.active > span, .pop_select > .select_storage > .color_box > a.active > span, .pop_select > .select_net > .color_box > a.active > span, .pop_select > .select_num > .color_box > a.active > span {
+        font-weight: 700; }
+  .pop_select > .select_storage > .color_box > a, .pop_select > .select_net > .color_box > a, .pop_select > .select_num > .color_box > a {
+    height: auto;
+    width: auto;
+    padding: 0.5rem 0.5rem; }
+    .pop_select > .select_storage > .color_box > a > span, .pop_select > .select_net > .color_box > a > span, .pop_select > .select_num > .color_box > a > span {
+      font-size: 0.7rem; }
+  .pop_select > .select_num > .color_box > a {
+    color: #666;
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.8rem;
+    line-height: 0.9rem;
+    border-radius: 50%; }
+  .pop_select > .select_num > .color_box > a:nth-of-type(2) {
+    border: none; }

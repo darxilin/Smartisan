@@ -7,9 +7,7 @@ import ReactCSStransitionGroup from "react-addons-css-transition-group"
 import { Carousel, WingBlank } from 'antd-mobile';
 import 'antd-mobile/dist/antd-mobile.css';
 import {Icon} from "antd"
-//import "../../js/swiper"
-//import "https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/css/swiper.min.css"
-//import "https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/js/swiper.min.js"
+import {connect} from "react-redux"
 
 class Index extends Component{
 	constructor(){
@@ -326,6 +324,8 @@ class Index extends Component{
 		})
 	}
 	componentWillMount(){
+		this.props.bottom_active()
+		this.props.hideNav()
 		axios.get("/marketing/mobile/index_5a50a9964b806e8007daf8dbab6e9028.json").then(res=>{
 			let list = "";
 			this.setState({
@@ -357,9 +357,14 @@ class Index extends Component{
 				})
 			})
 		})
+		
 	}
 	componentDidMount(){
 	
 	}
 }
-export default Index
+export default connect(null,{bottom_active:()=>{
+	return {type:"bottom_active",payload:0}
+},hideNav:()=>{
+	return {type:"hideNav",payload:true}
+}})(Index)

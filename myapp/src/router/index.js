@@ -8,6 +8,7 @@ import Index from "../components/Index"
 import User from "../components/User"
 import Login from "../components/User/Login"
 import Regist from "../components/User/Regist"
+import My from "../components/User/My"
 import App from "../App"
 import {Provider} from "react-redux"
 import store from "../store"
@@ -26,7 +27,8 @@ const router = (
 						<Switch>
 							<Route path="/user/login" component={Login}/>
 							<Route path="/user/regist" component={Regist}/>
-							<Redirect from="/user" to="/user/login"/>
+							<Route path="/user/my" component={My}/>
+							<Redirect from="/user" to="/user/my"/>
 						</Switch>
 					</User>
 				}/>

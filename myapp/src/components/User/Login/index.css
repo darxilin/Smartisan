@@ -1,0 +1,19 @@
+.login-form {
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 1rem; }
+
+.login-form-forgot {
+  float: right; }
+
+.login-form-button {
+  width: 100%; }
+
+.Login > .Nav > span {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center; }
